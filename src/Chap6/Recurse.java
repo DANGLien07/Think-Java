@@ -11,7 +11,7 @@ public class Recurse {
 		return s.charAt(0); 
 	} 
 
-	// last: trả lại một String mới có chứa toàn bộ 
+	// rest: trả lại một String mới có chứa toàn bộ 
 	// chỉ trừ kí tự đầu của String cho trước 
 	public static String rest(String s) { 
 		return s.substring(1, s.length()); 
@@ -21,6 +21,8 @@ public class Recurse {
 	public static int length(String s) { 
 		return s.length(); 
 	} 
+	
+	//In ra các chữ cái trên string mỗi chữ cái trên 1 dòng theo chiều xuôi
 	public static char printString(String s) {
 		if (length(s)==0) {
 			System.out.println ("Toi thieu mot ky tu!!!");
@@ -42,7 +44,7 @@ public class Recurse {
 	public static char last(String s) { 
 		return s.charAt(s.length()-1); 
 	} 
-	// last: trả lại một String mới có chứa toàn bộ trừ ký tự cuối 
+	// rest2: trả lại một String mới có chứa toàn bộ trừ ký tự cuối 
 	public static String rest2(String s) { 
 		return s.substring(0, s.length()-1); 
 	} 
@@ -50,6 +52,8 @@ public class Recurse {
 	public static int length2(String s) { 
 		return s.length(); 
 	}
+	
+	//In ra các chữ cái trên string mỗi chữ cái trên 1 dòng theo chiều ngược
 	public static char printBackward(String s) {
 		if (length2(s)==0) {
 			System.out.println ("Nhập vào tối thiểu một ký tự!");
